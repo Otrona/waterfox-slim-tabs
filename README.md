@@ -2,6 +2,8 @@
 
 A custom `userChrome.css` snippet that forcefully shrinks the modern Waterfox and Firefox tab bar down to a razor-thin 18px. Perfect for Linux users (like XFCE/Xubuntu) or anyone trying to maximize their vertical screen real estate.
 
+<img width="1185" height="768" alt="Screenshot_2026-04-03_20-35-40" src="https://github.com/user-attachments/assets/c0a7b8b6-26fc-4ca0-adaf-c860c10ae008" />
+
 ## Features
 * Forces a strict 18px maximum height on the tab bar.
 * Kills all invisible layout padding and block margins.
