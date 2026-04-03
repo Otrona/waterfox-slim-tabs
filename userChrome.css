@@ -1,0 +1,56 @@
+/* 1. OVERRIDE THE ROOT VARIABLES */
+:root {
+    --tab-min-height: 18px !important;
+}
+
+/* 2. FORCE THE MAIN CONTAINERS TO 18PX */
+#TabsToolbar,
+#tabbrowser-tabs,
+.tabbrowser-arrowscrollbox,
+#tabbrowser-tabs tab,
+.tab-stack,
+.tab-background,
+.tab-content {
+    min-height: var(--tab-min-height) !important;
+    max-height: var(--tab-min-height) !important;
+    height: var(--tab-min-height) !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+/* 3. ALIGN THE TEXT AND KILL INVISIBLE BLOCK MARGINS */
+.tab-label-container {
+    height: var(--tab-min-height) !important;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+.tab-text, 
+.tab-label {
+    font-size: 11px !important; /* Shrunk slightly to fit 18px */
+    line-height: var(--tab-min-height) !important; 
+    margin-block: 0px !important; 
+    padding-block: 0px !important;
+}
+
+/* 4. SHRINK THE FAVICON AND CLOSE BUTTON TO FIT INSIDE 18PX */
+.tab-icon-image,
+.tab-close-button {
+    height: 11px !important; /* Shrunk from 12px */
+    width: 11px !important;
+    margin-block: auto !important; 
+    padding: 0px !important;
+}
+
+/* 5. FIX THE NEW TAB BUTTON (+ ICON) */
+#tabs-newtab-button,
+#tabs-newtab-button > .toolbarbutton-icon {
+    min-height: var(--tab-min-height) !important;
+    max-height: var(--tab-min-height) !important;
+    height: var(--tab-min-height) !important;
+    width: 18px !important;
+    padding: 0px !important;
+    margin: 0px !important;
+}
